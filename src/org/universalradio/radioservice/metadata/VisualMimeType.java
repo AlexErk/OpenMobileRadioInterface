@@ -1,0 +1,20 @@
+package org.universalradio.radioservice.metadata;
+
+/**
+ * Copyright (C) IRT - Institut für Rundfunktechnik 2015
+ * 
+ * Visual metadata types
+ * @author Sattler, IRT GmbH
+ */
+public enum VisualMimeType {
+
+	MATADATA_VISUAL_MIMETYPE_UNKNOWN,
+	MATADATA_VISUAL_MIMETYPE_JPEG,
+	MATADATA_VISUAL_MIMETYPE_PNG,
+	MATADATA_VISUAL_MIMETYPE_TIFF,
+	MATADATA_VISUAL_MIMETYPE_BMP,
+	MATADATA_VISUAL_MIMETYPE_WEBP,
+	MATADATA_VISUAL_MIMETYPE_SVG,
+	MATADATA_VISUAL_MIMETYPE_GIF,
+	MATADATA_VISUAL_MIMETYPE_ANIMATED_GIF;
+}
