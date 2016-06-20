@@ -67,10 +67,10 @@ public interface Group {
 	public List<Visual> getLogos();
 	
     /**
-     * Returns the available {@link TermID}s for this {@link Group} or an empty list
-     * @return the available {@link TermID}s for this {@link Group} or an empty list
+     * Returns the available {@link TermId}s for this {@link Group} or an empty list
+     * @return the available {@link TermId}s for this {@link Group} or an empty list
      */
-	public List<TermID> getGenres();
+	public List<TermId> getGenres();
     
 	/**
      * Returns the available Links for this {@link Group} or an empty list

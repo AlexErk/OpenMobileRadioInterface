@@ -17,14 +17,14 @@ import java.util.List;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * 
- * Abstract class containing informations for a service component (SC) for a {@link RadioServiceDAB}
+ * Abstract class containing informations for a service component (SC) for a {@link RadioServiceDab}
  * @author Fabian Sattler, IRT GmbH
  */
-public interface RadioServiceDABComponent {
+public interface RadioServiceDabComponent {
 
 	/**
-	 * Returns the bitrate in kbit/s for this {@link RadioServiceDABComponent}
-	 * @return the bitrate in kbit/s for this {@link RadioServiceDABComponent}
+	 * Returns the bitrate in kbit/s for this {@link RadioServiceDabComponent}
+	 * @return the bitrate in kbit/s for this {@link RadioServiceDabComponent}
 	 */
 	public int getScBitrate();
 	
@@ -35,14 +35,14 @@ public interface RadioServiceDABComponent {
 	public boolean isScCaFlagSet();
 	
 	/**
-	 * Returns the {@link RadioServiceDABComponent}s channel id as numerical value
-	 * @return the {@link RadioServiceDABComponent}s channel id as numerical value
+	 * Returns the {@link RadioServiceDabComponent}s channel id as numerical value
+	 * @return the {@link RadioServiceDabComponent}s channel id as numerical value
 	 */
 	public int getScChannelId();
 	
 	/**
-	 * Returns the {@link RadioServiceDABComponent}s channel id as hex-string
-	 * @return the {@link RadioServiceDABComponent}s channel id as hex-string
+	 * Returns the {@link RadioServiceDabComponent}s channel id as hex-string
+	 * @return the {@link RadioServiceDabComponent}s channel id as hex-string
 	 */
 	public String getScChannelIdString();
 	
@@ -53,20 +53,20 @@ public interface RadioServiceDABComponent {
 	public boolean isScDgFlagSet();
 	
 	/**
-	 * Returns the {@link RadioServiceDABComponent} id as numerical value
-	 * @return the {@link RadioServiceDABComponent} id as numerical value
+	 * Returns the {@link RadioServiceDabComponent} id as numerical value
+	 * @return the {@link RadioServiceDabComponent} id as numerical value
 	 */
 	public int getScId();
 	
 	/**
-	 * Returns the {@link RadioServiceDABComponent} id as hex-string
-	 * @return the {@link RadioServiceDABComponent} id as hex-string
+	 * Returns the {@link RadioServiceDabComponent} id as hex-string
+	 * @return the {@link RadioServiceDabComponent} id as hex-string
 	 */
 	public String getScIdString();
 	
 	/**
-	 * Returns the label for this {@link RadioServiceDABComponent}
-	 * @return the label for this {@link RadioServiceDABComponent}
+	 * Returns the label for this {@link RadioServiceDabComponent}
+	 * @return the label for this {@link RadioServiceDabComponent}
 	 */
 	public String getScLabel();
 	
@@ -83,8 +83,8 @@ public interface RadioServiceDABComponent {
 	public String getScPacketAddressString();
 	
 	/**
-	 * Indicates if this {@link RadioServiceDABComponent} is the primary component of this {@link RadioServiceDAB}
-	 * @return if this {@link RadioServiceDABComponent} is the primary component of this {@link RadioServiceDAB}
+	 * Indicates if this {@link RadioServiceDabComponent} is the primary component of this {@link RadioServiceDab}
+	 * @return if this {@link RadioServiceDabComponent} is the primary component of this {@link RadioServiceDab}
 	 */
 	public boolean isScPrimary();
 	
@@ -125,8 +125,8 @@ public interface RadioServiceDABComponent {
 	public String getScTypeString();
 	
 	/**
-	 * Returns a list with {@link RadioServiceDABUserApplication}s for this SC
-	 * @return a list with {@link RadioServiceDABUserApplication}s for this SC
+	 * Returns a list with {@link RadioServiceDabUserApplication}s for this SC
+	 * @return a list with {@link RadioServiceDabUserApplication}s for this SC
 	 */
-	public List<RadioServiceDABUserApplication> getScUserApplications();
+	public List<RadioServiceDabUserApplication> getScUserApplications();
 }

@@ -20,35 +20,35 @@ import java.util.List;
  * Abstract class for a DAB {@link RadioService}
  * @author Fabian Sattler, IRT GmbH
  */
-public interface RadioServiceDAB extends RadioService {
+public interface RadioServiceDab extends RadioService {
 	
 	/**
-	 * Returns the extended country code (ECC) for the DAB Ensemble this {@link RadioServiceDAB} belongs to
-	 * @return the extended country code (ECC) for the DAB Ensemble this {@link RadioServiceDAB} belongs to
+	 * Returns the extended country code (ECC) for the DAB Ensemble this {@link RadioServiceDab} belongs to
+	 * @return the extended country code (ECC) for the DAB Ensemble this {@link RadioServiceDab} belongs to
 	 */
 	public String getEnsembleEcc();
 	
 	/**
-	 * Returns the DAB Ensemble ID, this {@link RadioServiceDAB} belongs to, as hex-string
-	 * @return the DAB Ensemble ID, this {@link RadioServiceDAB} belongs to, as hex-string
+	 * Returns the DAB Ensemble ID, this {@link RadioServiceDab} belongs to, as hex-string
+	 * @return the DAB Ensemble ID, this {@link RadioServiceDab} belongs to, as hex-string
 	 */
 	public String getEnsembleId();
 	
 	/**
-	 * Returns the label of the DAB Ensemble, this {@link RadioServiceDAB} belongs to
-	 * @return the label of the DAB Ensemble, this {@link RadioServiceDAB} belongs to
+	 * Returns the label of the DAB Ensemble, this {@link RadioServiceDab} belongs to
+	 * @return the label of the DAB Ensemble, this {@link RadioServiceDab} belongs to
 	 */
 	public String getEnsembleLabel();
 	
 	/**
-	 * Returns the frequency in kHz of the DAB Ensemble, this {@link RadioServiceDAB} belongs to
-	 * @return the frequency in kHz of the DAB Ensemble, this {@link RadioServiceDAB} belongs to
+	 * Returns the frequency in kHz of the DAB Ensemble, this {@link RadioServiceDab} belongs to
+	 * @return the frequency in kHz of the DAB Ensemble, this {@link RadioServiceDab} belongs to
 	 */
 	public long getEnsembleFrequency();
 	
 	/**
-	 * Returns the label of this {@link RadioServiceDAB}
-	 * @return the label of this {@link RadioServiceDAB}
+	 * Returns the label of this {@link RadioServiceDab}
+	 * @return the label of this {@link RadioServiceDab}
 	 */
 	public String getServiceLabel();
 	
@@ -65,16 +65,16 @@ public interface RadioServiceDAB extends RadioService {
 	public String getServiceEcc();
 	
 	/**
-	 * Indicates if this {@link RadioServiceDAB} is a DAB programme or a DAB data service  
+	 * Indicates if this {@link RadioServiceDab} is a DAB programme or a DAB data service  
 	 * @return indication for programme or data service
 	 */
 	public boolean isProgrammeService();
 	
 	/**
-	 * Returns a list with the {@link RadioServiceDABComponent}s associated with this {@link RadioServiceDAB}
-	 * @return a list with the {@link RadioServiceDABComponent}s associated with this {@link RadioServiceDAB}
+	 * Returns a list with the {@link RadioServiceDabComponent}s associated with this {@link RadioServiceDab}
+	 * @return a list with the {@link RadioServiceDabComponent}s associated with this {@link RadioServiceDab}
 	 */
-	public List<RadioServiceDABComponent> getServiceComponents();
+	public List<RadioServiceDabComponent> getServiceComponents();
 	
 
 }

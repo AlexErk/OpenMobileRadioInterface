@@ -1,4 +1,4 @@
-package org.universalradio.radioservice;
+package org.universalradio.radioservice.metadata;
 
 /**
  * Copyright (C) 2016 Open Mobile Radio Interface (OMRI) Group
@@ -15,16 +15,18 @@ package org.universalradio.radioservice;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * 
- * Interface to receive raw data from a {@link RadioServiceDABComponent} (e.g. Journaline data)
- *   
- * @author Fabian Sattler, IRT GmbH
- */
-public interface RadioServiceDABComponentListener {
+*/
+public interface TermId {
+	
+	/**
+	 * Returns the href of this termID
+	 * @return the href of this termID
+	 */
+	public int getHref();
 
 	/**
-	 * Called when new data from a specific DAB Service Component was received
-	 * @param serviceComponentChannelId th Service component id
-	 * @param scData raw data from the service component
+	 * Returns text of this termID.
+	 * @return text of this termID
 	 */
-	public void newServiceComponentData(int serviceComponentChannelId, byte[] scData);
+	public String getText();	
 }

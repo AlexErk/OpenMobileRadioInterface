@@ -21,9 +21,9 @@ package org.universalradio.tuner;
 public enum TunerStatus {
 
 	/* Tuner is not initialized */
-	STATUS_TUNER_NOT_INITALIZED(1, "Tuner not initialized"),
+	STATUS_TUNER_NOT_INITIALIZED(1, "Tuner not initialized"),
 	/** Tuner is ready **/
-	STATUS_TUNER_INITALIZED(1, "Tuner ready"),
+	STATUS_TUNER_INITIALIZED(1, "Tuner ready"),
 	/** Tuner is in an error state **/
 	STATUS_TUNER_ERROR(2, "Tuner is in an error state"),
 	/** Tuner is in suspended state **/

@@ -1,4 +1,4 @@
-package org.universalradio.radioservice.metadata;
+package org.universalradio.radioservice;
 
 /**
  * Copyright (C) 2016 Open Mobile Radio Interface (OMRI) Group
@@ -15,18 +15,26 @@ package org.universalradio.radioservice.metadata;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * 
-*/
-public interface TermID {
-	
-	/**
-	 * Returns the href of this termID
-	 * @return the href of this termID
-	 */
-	public int getHref();
+ * Abstract class containing informations about one user application for a {@link RadioServiceDabComponent}
+ * @author Fabian Sattler, IRT GmbH
+ */
+public interface RadioServiceDabUserApplication {
 
 	/**
-	 * Returns text of this termID.
-	 * @return text of this termID
+	 * Returns the user application label
+	 * @return the user application label
 	 */
-	public String getText();	
+	public String getUappLabel();
+	
+	/**
+	 * Returns the user application type as numerical value
+	 * @return the user application type as numerical value
+	 */
+	public int getUappType();
+	
+	/**
+	 * Returns the user application type as hex-string
+	 * @return the user application type as hex-string
+	 */
+	public String getUappTypeString();
 }

@@ -1,6 +1,4 @@
-package org.universalradio.radioservice.metadata;
-
-import org.w3c.dom.Document;
+package org.universalradio.radioservice;
 
 /**
  * Copyright (C) 2016 Open Mobile Radio Interface (OMRI) Group
@@ -17,14 +15,16 @@ import org.w3c.dom.Document;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * 
- * Abstract base class for a radio service
- * @author Erk, IRT GmbH
+ * Interface to receive raw data from a {@link RadioServiceDabComponent} (e.g. Journaline data)
+ *   
+ * @author Fabian Sattler, IRT GmbH
  */
-public interface SPIProgrammeInformation extends ProgrammeInformation {
+public interface RadioServiceDabComponentListener {
 
 	/**
-	 * Returns the SPI as a DOM object 
-	 * @return a SPI as a {@link Document}
+	 * Called when new data from a specific DAB Service Component was received
+	 * @param serviceComponentChannelId th Service component id
+	 * @param scData raw data from the service component
 	 */
-	public Document getSpiDocument();
+	public void newServiceComponentData(int serviceComponentChannelId, byte[] scData);
 }

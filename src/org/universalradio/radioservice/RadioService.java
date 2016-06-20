@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.universalradio.radioservice.metadata.Group;
 import org.universalradio.radioservice.metadata.Location;
-import org.universalradio.radioservice.metadata.TermID;
+import org.universalradio.radioservice.metadata.TermId;
 import org.universalradio.radioservice.metadata.Visual;
 
 /**
@@ -53,10 +53,10 @@ public interface RadioService {
 	public List<Visual> getLogos();
 	
     /**
-     * Returns the available {@link TermID}s for this {@link RadioService} or an empty list
-     * @return the available {@link TermID}s for this {@link RadioService} or an empty list
+     * Returns the available {@link TermId}s for this {@link RadioService} or an empty list
+     * @return the available {@link TermId}s for this {@link RadioService} or an empty list
      */
-	public List<TermID> getGenres();
+	public List<TermId> getGenres();
 	
     /**
      * Returns the available Links for this {@link RadioService} or an empty list
