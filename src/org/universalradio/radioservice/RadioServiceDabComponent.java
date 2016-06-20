@@ -129,4 +129,16 @@ public interface RadioServiceDabComponent {
 	 * @return a list with {@link RadioServiceDabUserApplication}s for this SC
 	 */
 	public List<RadioServiceDabUserApplication> getScUserApplications();
+	
+	/**
+	 * Subscribe a {@link RadioServiceDabComponentListener} to receive updates from this {@link RadioServiceDabComponent}
+	 * @param dabComponentListener the {@link RadioServiceDabComponentListener} to subscribe
+	 */
+	public void subscribe(RadioServiceDabComponentListener dabComponentListener);
+	
+	/**
+	 * Unsubscribe a {@link RadioServiceDabComponentListener}
+	 * @param dabComponentListener the {@link RadioServiceDabComponentListener} to unsubscribe
+	 */
+	public void unsubscribe(RadioServiceDabComponentListener dabComponentListener);
 }

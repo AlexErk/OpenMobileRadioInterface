@@ -47,4 +47,11 @@ public interface TunerListener extends RadioListener {
 	 * @param rssi the Received Signal Strength Indicator (in dbµV ???)
 	 */
 	public void tunerReceptionStatistics(Tuner tuner, boolean rfLock, int rssi);
+	
+	/**
+	 * Implementation and TunerType dependent raw data (e.g. in case of a DAB Tuner raw Fast Information Blocks) 
+	 * @param tuner the Tuner from which the raw data was received
+	 * @param data the raw data
+	 */
+	public void tunerRawData(Tuner tuner, byte[] data);
 }
