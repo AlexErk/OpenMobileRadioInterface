@@ -1,7 +1,5 @@
 package org.universalradio.radioservice.metadata;
 
-import java.util.List;
-
 /**
  * Copyright (C) 2016 Open Mobile Radio Interface (OMRI) Group
  *
@@ -17,27 +15,32 @@ import java.util.List;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * 
- * Abstract class for a DAB Dynamic Label (Plus) {@link Textual} metadata
- * 
+ * Abstract class containing information about one DL+ tag
  * @author Fabian Sattler, IRT GmbH
  */
-public interface TextualDABDynamicLabel extends Textual {
+public interface TextualDabDynamicLabelPlusItem {
+
+	/**
+	 * Returns the {@link TextualDabDynamicLabelPlusContentType}
+	 * @return the {@link TextualDabDynamicLabelPlusContentType}
+	 */
+	public TextualDabDynamicLabelPlusContentType getDynamicLabelPlusContentType();
 	
 	/**
-	 * Indicates if this {@link TextualDABDynamicLabel} has DL+ tags
-	 * @return indication of DL+ tags
+	 * Returns a textual description of the content type
+	 * @return a textual description of the content type
 	 */
-	public boolean hasTags();
+	public String getDlPlusContentTypeDescription();
 	
 	/**
-	 * Returns the number of tags. Only applicable for DL+. Check 'hasTags()'
-	 * @return the number of tags
+	 * Returns the content category of this tag
+	 * @return the content category of this tag
 	 */
-	public int getTagCount();
+	public String getDlPlusContentCategory();
 	
 	/**
-	 * Returns a list of {@link TextualDABDynamicLabelPlusItem}s or an empty list
-	 * @return a list of {@link TextualDABDynamicLabelPlusItem}s or an empty list
+	 * Returns the text of this DL+ tag
+	 * @return the text of this DL+ tag
 	 */
-	public List<TextualDABDynamicLabelPlusItem> getDlPlusItems();
+	public String getDlPlusContentText();
 }

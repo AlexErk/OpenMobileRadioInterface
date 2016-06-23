@@ -19,7 +19,7 @@ package org.universalradio.radioservice.metadata;
  * 
  * @author Fabian Sattler, IRT GmbH
  */
-public enum TextualDABDynamicLabelPlusContentType {
+public enum TextualDabDynamicLabelPlusContentType {
 
 	DUMMY(0, "Dummy"),
 	ITEM_TITLE(1, "Title"),
@@ -89,7 +89,7 @@ public enum TextualDABDynamicLabelPlusContentType {
 	private final int contentTypeId;
     private final String contentTypeString;
     
-    private TextualDABDynamicLabelPlusContentType(int contentTypeId, String contentTypeString) {
+    private TextualDabDynamicLabelPlusContentType(int contentTypeId, String contentTypeString) {
     	this.contentTypeId = contentTypeId;
     	this.contentTypeString = contentTypeString;
     }
