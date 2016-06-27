@@ -22,10 +22,10 @@ import java.util.Calendar;
  * 
  * @author Fabian Sattler, IRT GmbH
  */
-public interface VisualDABSlideShow extends Visual {
+public interface VisualDabSlideShow extends Visual {
 	
 	/**
-	 * Indicates if this {@link VisualDABSlideShow} has categorization information
+	 * Indicates if this {@link VisualDabSlideShow} has categorization information
 	 * @return indication for categorization
 	 */
 	public boolean isCategorized();
@@ -37,7 +37,7 @@ public interface VisualDABSlideShow extends Visual {
 	public String getContentName();
 	
 	/**
-	 * The ID of this {@link VisualDABSlideShow}
+	 * The ID of this {@link VisualDabSlideShow}
 	 * @return the ID
 	 */
 	public int getSlideId();
@@ -49,26 +49,26 @@ public interface VisualDABSlideShow extends Visual {
 	public Calendar getTriggerTime();
 	
 	/**
-	 * Returns the category description of this {@link VisualDABSlideShow}. Only applicable for a DAB Categorized Slideshow (check 'isCategorized()')
-	 * @return the category text or an empty {@link String} if it's not a categorized VisualDABSlideShow
+	 * Returns the category description of this {@link VisualDabSlideShow}. Only applicable for a DAB Categorized Slideshow (check 'isCategorized()')
+	 * @return the category text or an empty {@link String} if it's not a categorized VisualDabSlideShow
 	 */
 	public String getCategoryText();
 	
 	/**
-	 * Returns the category id of this {@link VisualDABSlideShow}. Only applicable for for a DAB Categorized Slideshow (check 'isCategorized()')
-	 * @return the category id or '-1' if it's not a categorized VisualDABSlideShow
+	 * Returns the category id of this {@link VisualDabSlideShow}. Only applicable for for a DAB Categorized Slideshow (check 'isCategorized()')
+	 * @return the category id or '-1' if it's not a categorized VisualDabSlideShow
 	 */
 	public int getCategoryId();
 	
 	/**
-	 * Returns the link associated with this {@link VisualDABSlideShow}. Only applicable for for a DAB Categorized Slideshow (check 'isCategorized()')
-	 * @return the link associated with this {@link VisualDABSlideShow} or an empty {@link String}
+	 * Returns the link associated with this {@link VisualDabSlideShow}. Only applicable for for a DAB Categorized Slideshow (check 'isCategorized()')
+	 * @return the link associated with this {@link VisualDabSlideShow} or an empty {@link String}
 	 */
 	public URI getLink();
 	
 	/**
-	 * Returns the click through link associated with this {@link VisualDABSlideShow}. Only applicable for for a DAB Categorized Slideshow (check 'isCategorized()')
-	 * @return the click through link associated with this {@link VisualDABSlideShow} or an empty {@link String}
+	 * Returns the click through link associated with this {@link VisualDabSlideShow}. Only applicable for for a DAB Categorized Slideshow (check 'isCategorized()')
+	 * @return the click through link associated with this {@link VisualDabSlideShow} or an empty {@link String}
 	 */
 	public URI getClickThroughUrl();
 }
