@@ -15,12 +15,12 @@ package org.universalradio.radioservice.metadata;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  * 
- * Textual metadata type definitions
+ * Programme metadata type definitions
  * 
  * @author Erk, IRT GmbH
  */
 public enum ProgrammeInformationType {
 	
-	/** Textual metadata received via RadioDNS/DAB SPI **/
+	/** Programme metadata received via RadioDNS/DAB SPI **/
 	METADATA_PROGRAMME_TYPE_SPI_EPG
 }
