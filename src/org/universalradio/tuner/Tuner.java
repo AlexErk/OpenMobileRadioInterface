@@ -81,7 +81,7 @@ public interface Tuner {
 	/**
 	 * Stop the currently running {@link RadioService} on this tuner
 	 */
-	public void stopService();
+	public void stopRadioService();
 
 	/**
 	 * Retrieve the currently running {@link RadioService}

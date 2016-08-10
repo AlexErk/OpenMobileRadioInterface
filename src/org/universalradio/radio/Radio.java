@@ -112,6 +112,15 @@ public abstract class Radio {
      * to use the dedicated method calls in the {@link Tuner} objects. 
 	 */
 	public abstract void startRadioServiceScan();
+	
+	/**
+	 * Stops the possible running service scan on all available tuners.
+	 * The method here is for the convenience of the application developer.
+     * If the application developer wants to perform service scans in the background
+     * (in the case the Radio exposes more than on {@link Tuner} instances), it's recommended 
+     * to use the dedicated method calls in the {@link Tuner} objects. 
+	 */
+	public abstract void stopRadioServiceScan();
     
     /**
      * Initializes a specific {@link Tuner} device. You should listen to status changes with a registered {@link TunerListener}.

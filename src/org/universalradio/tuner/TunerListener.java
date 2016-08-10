@@ -25,9 +25,15 @@ public interface TunerListener extends RadioListener {
 
 	/**
 	 * Tuner changed its operating state
-	 * @param newState the new {@link TunerStatus}
+	 * @param newStatus the new {@link TunerStatus}
 	 */
-	public void tunerStateChanged(Tuner tuner, TunerStatus newState);
+	public void tunerStatusChanged(Tuner tuner, TunerStatus newStatus);
+	
+	/**
+	 * Tuner scan progress indicator
+	 * @param percentScanned the percentage finished so far
+	 */
+	public void tunerScanProgress(int percentScanned);
 	
 	/**
 	 * A {@link RadioService} started

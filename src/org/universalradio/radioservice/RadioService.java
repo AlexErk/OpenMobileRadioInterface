@@ -32,7 +32,7 @@ public interface RadioService {
 	 * Indicates the type of this RadioService
 	 * @return the {@link RadioServiceType} of this RadioService
 	 */
-	public RadioServiceType getRadioServicetype();
+	public RadioServiceType getRadioServiceType();
 	
 	/**
 	 * Returns the short description of this {@link RadioService} as {@link String} 
