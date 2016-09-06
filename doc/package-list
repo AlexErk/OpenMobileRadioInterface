@@ -1,5 +1,5 @@
-org.universalradio.radio
-org.universalradio.radio.impl
-org.universalradio.radioservice
-org.universalradio.radioservice.metadata
-org.universalradio.tuner
+org.omri.radio
+org.omri.radio.impl
+org.omri.radioservice
+org.omri.radioservice.metadata
+org.omri.tuner
